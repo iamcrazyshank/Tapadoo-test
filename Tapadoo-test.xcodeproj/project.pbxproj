@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		8682DBEE2615F409009EB7BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8682DBED2615F409009EB7BA /* AppDelegate.swift */; };
 		8682DBF02615F409009EB7BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8682DBEF2615F409009EB7BA /* SceneDelegate.swift */; };
-		8682DBF22615F409009EB7BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8682DBF12615F409009EB7BA /* ViewController.swift */; };
 		8682DBF52615F409009EB7BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8682DBF32615F409009EB7BA /* Main.storyboard */; };
 		8682DBF72615F40D009EB7BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8682DBF62615F40D009EB7BA /* Assets.xcassets */; };
 		8682DBFA2615F40D009EB7BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8682DBF82615F40D009EB7BA /* LaunchScreen.storyboard */; };
 		8682DC052615F40E009EB7BA /* Tapadoo_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8682DC042615F40E009EB7BA /* Tapadoo_testTests.swift */; };
 		8682DC102615F40E009EB7BA /* Tapadoo_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8682DC0F2615F40E009EB7BA /* Tapadoo_testUITests.swift */; };
+		8682DC272615F83D009EB7BA /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8682DC262615F83D009EB7BA /* Networking.swift */; };
+		8682DC322615FB92009EB7BA /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8682DC312615FB91009EB7BA /* Books.swift */; };
+		8682DC3F2615FDAA009EB7BA /* MasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8682DC3E2615FDAA009EB7BA /* MasterVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 		8682DBEA2615F409009EB7BA /* Tapadoo-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tapadoo-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8682DBED2615F409009EB7BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8682DBEF2615F409009EB7BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8682DBF12615F409009EB7BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8682DBF42615F409009EB7BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8682DBF62615F40D009EB7BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8682DBF92615F40D009EB7BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		8682DC0B2615F40E009EB7BA /* Tapadoo-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tapadoo-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8682DC0F2615F40E009EB7BA /* Tapadoo_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tapadoo_testUITests.swift; sourceTree = "<group>"; };
 		8682DC112615F40E009EB7BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8682DC262615F83D009EB7BA /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		8682DC312615FB91009EB7BA /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
+		8682DC3E2615FDAA009EB7BA /* MasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 		8682DBEC2615F409009EB7BA /* Tapadoo-test */ = {
 			isa = PBXGroup;
 			children = (
+				8682DC302615FB62009EB7BA /* Model */,
 				8682DBED2615F409009EB7BA /* AppDelegate.swift */,
 				8682DBEF2615F409009EB7BA /* SceneDelegate.swift */,
-				8682DBF12615F409009EB7BA /* ViewController.swift */,
+				8682DC2B2615F8C9009EB7BA /* Networking */,
 				8682DBF32615F409009EB7BA /* Main.storyboard */,
+				8682DC3E2615FDAA009EB7BA /* MasterVC.swift */,
 				8682DBF62615F40D009EB7BA /* Assets.xcassets */,
 				8682DBF82615F40D009EB7BA /* LaunchScreen.storyboard */,
 				8682DBFB2615F40D009EB7BA /* Info.plist */,
@@ -126,6 +132,22 @@
 				8682DC112615F40E009EB7BA /* Info.plist */,
 			);
 			path = "Tapadoo-testUITests";
+			sourceTree = "<group>";
+		};
+		8682DC2B2615F8C9009EB7BA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8682DC262615F83D009EB7BA /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8682DC302615FB62009EB7BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8682DC312615FB91009EB7BA /* Books.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8682DBF22615F409009EB7BA /* ViewController.swift in Sources */,
+				8682DC322615FB92009EB7BA /* Books.swift in Sources */,
+				8682DC3F2615FDAA009EB7BA /* MasterVC.swift in Sources */,
+				8682DC272615F83D009EB7BA /* Networking.swift in Sources */,
 				8682DBEE2615F409009EB7BA /* AppDelegate.swift in Sources */,
 				8682DBF02615F409009EB7BA /* SceneDelegate.swift in Sources */,
 			);
